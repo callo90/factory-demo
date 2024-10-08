@@ -10,7 +10,7 @@ import Domain
 import Data
 import Factory
 
-extension RepositoriesContainer: AutoRegistering {
+extension RepositoriesContainer: @retroactive AutoRegistering {
     
     public func autoRegister() {
         userRepository.register { UserDataRepository() }

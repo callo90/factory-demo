@@ -9,7 +9,7 @@ import Foundation
 import Domain
 import Factory
 
-extension UseCasesContainer: AutoRegistering {
+extension UseCasesContainer: @retroactive AutoRegistering {
     
     public func autoRegister() {
         fetchUsersUseCase.register { FetchUsersUseCase() }

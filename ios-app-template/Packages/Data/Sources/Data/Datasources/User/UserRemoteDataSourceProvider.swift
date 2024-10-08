@@ -8,7 +8,6 @@
 import Foundation
 import Fakery
 import Factory
-import Alamofire
 import Shared
 
 public protocol UserRemoteDataSource {

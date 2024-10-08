@@ -9,7 +9,7 @@ import Foundation
 import Data
 import Factory
 
-extension DataSourcesContainer: AutoRegistering {
+extension DataSourcesContainer: @retroactive AutoRegistering {
     
     public func autoRegister() {
         userRemoteDataSource.register { UserRemoteDataSourceProvider() }
